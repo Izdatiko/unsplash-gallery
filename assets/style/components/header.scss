@@ -1,0 +1,42 @@
+.header {
+    background: #000;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        padding: 0 20px;
+        &__logo {
+            a {
+                svg {
+                    width: 135px;
+                    height: 72px;
+                }
+            }
+        }
+        &__item {
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                //
+                color: #fff;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            svg {
+                width: 23px;
+                height: 72px;
+            }
+            @media (max-width: 500px) {
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}

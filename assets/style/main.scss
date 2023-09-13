@@ -1,0 +1,32 @@
+// reset
+@import "./reset.css";
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// components
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/gallery.scss";
+@import "./components/additional.scss";
+@import "./components/photo.scss";
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

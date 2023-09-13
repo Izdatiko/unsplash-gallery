@@ -1,0 +1,48 @@
+.banner {
+    position: relative;
+    background-image: url(@/assets/img/banner.jpg);
+    width: 100%;
+    height: 253px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    &-content {
+        justify-content: center;
+        display: flex;
+        padding: 0 20px;
+        &__form {
+            padding: 20px 30px;
+            background: white;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            @media (max-width: 1024px) {
+                width: 80%;
+            }
+            @media (max-width: 640px) {
+                width: 100%;
+                padding: 15px 20px;
+            }
+            input {
+                width: 100%;
+                height: 32px;
+                border: white;
+                outline: none;
+                align-items: center;
+                background-color: white;
+                color: #000;
+                font-family: Roboto;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            button {
+                border: 0;
+                background: white;
+            }
+        }
+    }
+}
