@@ -2,7 +2,9 @@
   <div>
     <Banner @search="search" />
     <Gallery :photos="photos" />
-    <Additional />
+    <ClientOnly>
+      <Additional />
+    </ClientOnly>
   </div>
 </template>
 

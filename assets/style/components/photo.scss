@@ -12,9 +12,6 @@
         transform: scale(1.1);
         object-fit: cover;
         z-index: -1;
-        @media (max-width: 650px) {
-            display: none;
-        }
     }
     &-content {
         display: flex;
@@ -94,6 +91,7 @@
             p {
                 span {
                     color: #bdbdbd;
+                    font-size: 13px;
                 }
             }
             @media (max-width: 650px) {
