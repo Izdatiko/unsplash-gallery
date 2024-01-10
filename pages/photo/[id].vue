@@ -24,7 +24,7 @@
             >
               <IconHeart class="photo-content__heart active" />
             </button>
-            <nuxt-link :to="photo.urls.regular" target="_blank" download>
+            <nuxt-link :to="photo.urls.regular" download>
               <IconDownload class="photo-content__download" />
               <p><span>Downloand</span></p>
             </nuxt-link>

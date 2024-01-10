@@ -6,11 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,css,md}": "prettier --write --ignore-unknown --ignore-path.huskyignore"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.1"
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "nuxt": "^3.7.1",
+    "prettier": "^3.1.1"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
